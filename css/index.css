@@ -1,0 +1,728 @@
+/* ============================================================================== */
+/* reset*/
+/* ============================================================================== */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ============================================================================== */
+/* Font family*/
+/* ============================================================================== */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ============================================================================== */
+/* Declaracion de Material Icons - Google fonts*/
+/* ============================================================================== */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+/* ============================================================================== */
+/* Elementos Ocultos
+/* ============================================================================== */
+.sheld-logo{
+    display: none;
+}
+.navbar-burger{
+    display: none;
+}
+/* ============================================================================== */
+/* Menu Lateral - Menu burguer - Medidas reducidas
+/* ============================================================================== */
+.navbar-burger{
+    margin-top: 10px;
+    margin-right: 16px;
+}
+.navbar-burger .btn{
+    color: white !important;
+    width: 50px !important;
+}
+.navbar-burger .btn:hover{
+    color: #FD2B73 !important;
+}
+.offcanvas-header .btn-close{
+    color: white !important;
+}
+
+.offcanvas-body{
+    background-color: #ecf9fc;
+}
+.offcanvas-header{
+    background-color: #04113D;
+    text-align: center !important;
+}
+.offcanvas-body > ul{
+    list-style: none; 
+}
+.offcanvas-body > li{
+    text-decoration: none;
+}
+.offcanvas-body > a{
+    color: black;
+}
+.links-burger li{
+    padding-top: 10px;
+}
+.links-redes-burger> h4{
+    height: 10px;
+    margin-top: 16px;
+    color: #6c9be2;
+}
+.links-redes-burger> ul{ 
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-left: 0;
+    width: 20px;
+    /* color: black !important; */
+}
+.links-redes-burger> li{
+    height: 20px !important;
+    font-size: 12px;
+}
+/* ============================================================================== */
+/* Header left- Estilo general y Logo
+/* ============================================================================== */
+header{
+    background-color: #04113D;
+    color: white;
+    height: 65px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.headerLeft{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+.logo {
+    font-family: 'Lobster', cursive;
+    align-items: normal;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.logo img{
+    height: 50px;
+    padding: 0;
+    margin-left: 16px;
+}
+
+/* ============================================================================== */
+/* Header left- SearchBar*/
+/* ============================================================================== */
+.search-bar{
+    background-color: white;
+    border: solid 1px #ccc ;
+    border-radius: 20px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    margin-left: 20px;
+    transition: 0.3s ease-in-out;
+}
+.search-bar:focus-within{
+    border: 1px #6c9be2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.search-bar input[type="text"]{
+    border: none;
+    outline: none;
+    padding: auto;
+    flex: 1;
+    font-size: 16px;
+}
+.search-bar .actions{
+    display: flex;
+    gap: 5px;
+}
+.search-bar .actions button{
+    border: none;
+    outline: none;
+    background:none;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease-in-out;
+}
+.search-bar .actions button:hover{
+    color: #2979e2;
+}
+/* ============================================================================== */
+/* Header rigth- Redes Sociales*/
+/* ============================================================================== */
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+.redes-full ul li{
+    list-style: none;
+}
+.logosRedes{
+    text-decoration: none;
+    height: 25px;
+    margin: 20px 5px;
+}
+.redes-full img:hover{
+border: 1px yellow;
+}
+/* ============================================================================== */
+/* Navbar - links*/
+/* ============================================================================== */
+.navbar-desktop{
+    display: flex;
+    position: relative;
+    background: #04113D;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-desktop li{
+    display: inline-block;
+    /* border: 2px solid blue; */
+    font-size: 15px;
+}
+.navbar-desktop a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;
+}
+.navbar-desktop a:hover{
+    background: #6c9be2;
+    color: black;
+    /* height: 40px; */
+}
+.links{
+    list-style: none;
+    margin: 0;
+}
+/* ============================================================================== */
+/* Navbar - derecho >> Login - favoritos - compras*/
+/* ============================================================================== */
+.botLeft{
+    position: absolute;
+    right: 0;
+    }
+#usEdit{
+    padding: 0;
+    margin: 0 5px;
+}
+.usuario{
+    padding: 0;
+}
+/* ============================================================================== */
+/* Seccion novedades y Ofertas - disposicion Flexbox*/
+/* ============================================================================== */
+.container-novedades, .container-ofertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container-novedades > h1{
+    font-size: 24px;
+}
+.tituloSeccion{
+    margin: 16px;
+    left: 0;
+}
+
+.container{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+    text-align: center;
+}
+/* ============================================================================== */
+/* Seccion novedades - Cards*/
+/* ============================================================================== */
+ul li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+.productos{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-family: 'Open Sans',Arial, sans-serif;
+}
+.productos>li>div {
+    border: 1px solid #dddd;
+    border-radius: 5px;
+    position: relative;
+    background: #F7F9FD;
+    width: 263px;
+}
+
+.productos>li>div:hover{
+    border-color: #FD2B73;
+}
+.productos>li>div img{
+    background: #ffffff;
+    border-radius: 5px;
+    margin: auto;
+}
+.content{
+    padding: 5px;
+}
+.tituloArticulo{
+    color: #404751;
+}
+h4{
+    font-size: 18px; 
+}
+.precio{
+    color:#3C8EEE ;
+    font-size: 14px;
+    min-height: 40px;
+}
+.stock, .codigo{
+    font-size: 14px;
+    color: #404751;
+    height: 28px;
+}
+.promoNuevo{
+    background-color: #3C8EEE;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
+.promoOferta{
+    background-color: #FD2B73;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
+/* ============================================================================== */
+/* Pagina - Login*/
+/* ============================================================================== */
+.welcome-screen-container{
+    width: 500px;
+}
+.form-container {
+    background-color: white;
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.form-container .login-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-container .login-container>h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.form-container .login-container>p,
+.form-container .login-container span {
+    color: #555;
+    text-align: center;
+}
+
+.form-container .login-container label {
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.form-container .login-container input.input {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ccc;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form-container .login-container input.input:focus {
+    outline: solid 1px rgb(0, 153, 255);
+}
+
+.form-container .login-container .providers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-container .login-container button.btn,
+.form-container .login-container input.btn {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-container .login-container input.btn.btn-login {
+    background-color: black;
+    color: white;
+}
+
+.form-container .login-container button.btn.google-provider {
+    background-color: white;
+    color: black;
+    border: solid 1px #ccc;
+}
+
+.form-container .login-container button.btn.facebook-provider {
+    background-color: rgb(10, 82, 216);
+    color: white;
+    border: 0;
+}
+
+.form-container .login-container button.btn.twitter-provider {
+    background-color: rgb(10, 168, 216);
+    color: white;
+    border: 0;
+}
+
+.form-container .login-container button.btn.google-provider:hover {
+    background-color: rgb(212, 212, 212);
+    color: black;
+}
+
+.form-container .login-container button.btn.facebook-provider:hover {
+    background-color: rgb(6, 61, 163);
+    color: white;
+}
+
+.form-container .login-container button.btn.twitter-provider:hover {
+    background-color: rgb(7, 133, 172);
+    color: white;
+}
+
+.form-container .login-container .options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container .welcome-screen-container {
+    background-color: black;
+    height: 100%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1357px) {
+    .form-container {
+        width: 95%;
+    }
+
+    .form-container .login-container {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .form-container .welcome-screen-container {
+        width: 40%;
+    }
+}
+
+/* ============================================================================== */
+/* Pagina - Politicas de Garantia*/
+/* ============================================================================== */
+.border-card{
+    width: 70%;
+    border: 10px !important;
+    border-radius: 20px;
+}
+#cke_pastebin{
+    text-align: justify;
+}
+/* ============================================================================== */
+/* Footer*/
+/* ============================================================================== */
+footer{
+    font-family: 'Open Sans',Arial, sans-serif;
+    background: #04113D;
+    color: white;
+    margin-top: 30px;
+    padding-top: 20px;
+    overflow: hidden;
+
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+    /* text-align: center; */
+}
+footer img{
+    height: 80px;
+}
+footer>div{
+    margin: 10px;
+    text-decoration: none;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer>.infoLogo{
+    font-size: 14px;
+}
+.central-reference > p{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-justify: auto;
+}
+.mediosPago p{
+    font-size: 12px;
+}
+footer h3{
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.centralGaming>ul li{
+    font-size: 14px;
+    padding: 5px 0;
+}
+.ayuda>ul li{
+    font-size: 14px;
+    padding: 5px 0;
+}
+.redesSociales>div a{
+    font-size: 12px;
+}
+.redes-footer{
+    display: flex;
+    align-items: center;
+}
+.copyright{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+.copyright > p{
+    margin: 0 !important;
+    padding: 0;
+}
+.btn-close{
+    color: white !important;
+    fill: white !important;
+}
+/* ============================================================================== */
+/* Media Queries - Resoluciones donde se rompe el codigo*/
+/* Se usaron las resoluciones: 1135px xq se rompe el codigo a partir de ahi)*/
+/*resolucion: 768px, 425px (a partir de esta resolucion el codigo funciona 
+en moviles de menores resoluciones,porque se adapta*/
+/* ============================================================================== */
+@media screen and (max-width: 1135px){
+    .productos{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        font-family: 'Open Sans',Arial, sans-serif;
+    }
+}
+@media screen and (max-width: 768px){
+    .material-icons{
+        font-size: 30px;
+    }
+    .logo-full{
+        display: none;
+    }
+    .redes-full{
+        display: none;
+    }
+    .navbar-desktop{
+        display: none;
+    }
+    .navbar-burger{
+        display: block;
+    }
+    .sheld-logo{
+        display: block;
+    }
+
+    .productos{
+        margin: 0 !important;
+        padding: 0 !important;
+        display: grid;
+        grid-template-rows: repeat(auto-fit,minmax(200px,1fr));;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        font-family: 'Open Sans',Arial, sans-serif;
+    }
+    
+}
+@media screen and (max-width: 563px){
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .logo-full{
+        display: none;
+    }
+    
+    .sheld-logo{
+        display: block;
+    }
+    .productos{
+        display: grid;
+        grid-template-rows: repeat(auto-fit,minmax(200px,1fr));;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        font-family: 'Open Sans',Arial, sans-serif;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 20px;
+        text-align: center;
+    }
+    .redes-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 425px){
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .logo-full{
+        display: none;
+    }
+    
+    .sheld-logo{
+        display: block;
+    }
+    .productos{
+        display: grid;
+        grid-template-rows: repeat(auto-fit,minmax(200px,1fr));;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        font-family: 'Open Sans',Arial, sans-serif;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 20px;
+        text-align: center;
+    }
+    .redes-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 375px){
+    .headerLeft .search-bar{
+        display: none;
+    }
+    .offcanvas-body > .search-bar{
+        display: block;
+        height: 40px;
+    }
+    .search-bar{
+        background-color: white;
+        border: solid 1px #ccc ;
+        border-radius: 20px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 16px;
+        margin-left: 20px;
+        transition: 0.3s ease-in-out;
+        position: relative;
+    }
+    .offcanvas-body .search-bar:focus-within{
+        border: 1px #6c9be2;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .offcanvas-body .search-bar input[type="text"]{
+        border: none;
+        outline: none;
+        padding: auto;
+        flex: 1;
+        font-size: 16px;
+        
+    }
+    .offcanvas-body .search-bar .actions{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+    .offcanvas-body .search-bar .actions button{
+        border: none;
+        outline: none;
+        background:none;
+        cursor: pointer;
+        color: #999;
+        transition: color 0.3s ease-in-out;
+    }
+    .offcanvas-body .search-bar .actions button:hover{
+        color: #2979e2;
+    }
+}
