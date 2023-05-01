@@ -611,6 +611,9 @@ en moviles de menores resoluciones,porque se adapta*/
         top: 0;
         z-index: 1;
     }
+    body{
+        position: relative;
+    }
     .menu-inferior-mobil{
         display: flex;
         flex-direction: row;
@@ -618,7 +621,8 @@ en moviles de menores resoluciones,porque se adapta*/
         align-items: center;
         justify-content: center;
         gap: 50px;
-        position: static;
+        position: sticky;
+        bottom: 0;
         z-index: 1;
     }
    
