@@ -48,6 +48,9 @@ body{
 .navbar-burger{
     display: none;
 }
+.menu-inferior-mobil{
+    display: none;
+}
 /* ============================================================================== */
 /* Menu Lateral - Menu burguer - Medidas reducidas
 /* ============================================================================== */
@@ -574,10 +577,6 @@ en moviles de menores resoluciones,porque se adapta*/
 }
 @media screen and (max-width: 850px){
 
-    main{
-        margin-top: 50px;
-    }
-
     .caja__trasera{
         max-width: 350px;
         height: 300px;
@@ -604,6 +603,25 @@ en moviles de menores resoluciones,porque se adapta*/
     }
 }
 @media screen and (max-width: 768px){
+    .search-bar{
+        display: none;
+    }
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .menu-inferior-mobil{
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        position: static;
+        z-index: 1;
+    }
+   
     .material-icons{
         font-size: 30px;
     }
