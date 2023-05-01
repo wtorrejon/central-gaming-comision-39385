@@ -1,62 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Central Gaming</title>
-    <link rel="shortcut icon" href="../assets/img/header/logo/Escudo.svg" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/index.css">
-</head>
-
-<body>
-    <div class="form-container">
-        <div class="login-container">
-            <div class="logoLog">
-                <a href="../index.html"><img src="../assets/img/header/logo/central-gaming-black.svg" alt="Central_Gaming"></a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ============================================================================================================================ -->
+        <!-- Linkeo de Bootstrap -->
+        <!-- ============================================================================================================================ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+        <title>Central Gaming</title>
+        <!-- Font Awesome Cdn Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <!-- ============================================================================================================================ -->
+        <!-- Favicon -->
+        <!-- ============================================================================================================================ -->
+        <link rel="shortcut icon" href="../assets/img/header/logo/Escudo.svg" type="image/x-icon" />
+        <!-- ============================================================================================================================ -->
+        <!-- Googlefonts Material Icons-->
+        <!-- ============================================================================================================================ -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+        <!-- ============================================================================================================================ -->
+        <!-- link CSS del proyecto -->
+        <!-- ============================================================================================================================ -->
+        <link rel="stylesheet" href="../css/index.css" />
+        <!-- ============================================================================================================================ -->
+    </head>
+    <body class="body-login">
+        <header>
+            <!-- ============================================================================================================================ -->
+            <!-- Header Izquierdo - Logo y search -->
+            <!-- ============================================================================================================================ -->
+            <div class="headerLeft">
+                <div class="logo">
+                    <a class="logo-full" href="../index.html"><img src="../assets/img/header/logo/central-gaming.svg"
+                            alt="central gaming" /></a>
+                    <a class="sheld-logo" href="../index.html"><img src="../assets/img/header/logo/Escudo.svg" alt=""></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" />
+                    <div class="actions">
+                        <button>
+                            <span class="material-icons">search</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <h2>Welcome</h2>
-            <p>Login</p>
-
-            <form action="">
-                <p>
-                    <label for="username">Username</label>
-                    <input class="input" type="text" name="username" />
-                </p>
-
-                <p>
-                    <label for="password">Password</label>
-                    <input class="input" type="password" name="password" />
-                </p>
-
-                <div class="options">
-                    <div>
-                        Remember me <input type="checkbox" name="remeberme" id="" />
+            <!-- ============================================================================================================================ -->
+            <!-- Header derecho - redes sociales -->
+            <!-- ============================================================================================================================ -->
+            <div class="redes-full">
+                <ul class="redes">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank"><img class="logosRedes"
+                                src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/facebook.svg" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank"><img class="logosRedes"
+                                src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/square-twitter.svg"
+                                alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank"><img class="logosRedes"
+                                src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/youtube.svg" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank"><img class="logosRedes"
+                                src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/instagram.svg " alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ============================================================================================================================ -->
+            <!-- Menu Hamburguesa y subMenu -->
+            <!-- ============================================================================================================================ -->
+            <div class="navbar-burger">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="material-icons">menu</span></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="../assets/img/header/logo/central-gaming.svg" alt=""></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
                     </div>
-                    <div>
-                        <a href="#">Olvide mi password</a>
+                    <div class="offcanvas-body">
+                        <div class="search-bar">
+                            <input type="text" />
+                            <div class="actions">
+                                <button>
+                                    <span class="material-icons">search</span>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="links-burger">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./productos.html">Productos</a></li>
+                            <li><a href="./marcas.html">Marcas</a></li>
+                            <li><a href="./novedades.html">Novedades</a></li> 
+                            <li><a href="./ofertas.html">Ofertas</a></li>
+                            <div class="links-redes-burger">
+                                <h4>Redes Sociales</h4>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank"><img class="logosRedes"
+                                                src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/facebook.svg" alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank"><img class="logosRedes"
+                                                src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/square-twitter.svg"
+                                                alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/" target="_blank"><img class="logosRedes"
+                                                src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/youtube.svg" alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank"><img class="logosRedes"
+                                                src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/instagram.svg " alt="" /></a>
+                                    </li>
+                                </ul>
+                            </div>       
+                            <li><a href="./login.html">Login</a></li>
+                            <li><a href="../index.html">Compras</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar-desktop">
+            <!-- ============================================================================================================================ -->
+            <!-- Navbar - links -->
+            <!-- ============================================================================================================================ -->
+            <ul class="links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/marcas.html">Marcas</a></li>
+                <li><a href="../pages/novedades.html">Novedades</a></li>
+                <li><a href="../pages/ofertas.html">Ofertas</a></li>
+            </ul>
+            <!-- ============================================================================================================================ -->
+            <!-- Navbar - Login - Canasta -->
+            <!-- ============================================================================================================================ -->
+            <div class="botLeft">
+                <ul class="usuario">
+                    <li>
+                        <a id="usEdit" href="./login.html">
+                            <span class="material-symbols-outlined">account_circle</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="usEdit" href="">
+                            <span class="material-symbols-outlined">shopping_bag</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main-login">
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
                     </div>
                 </div>
 
-                <p>
-                    <input class="btn btn-login" type="submit" value="Iniciar sesión" />
-                </p>
-                <div class="providers">
-                    <span>Otros métodos para hacer login</span>
-                    <button class="btn google-provider">Google</button>
-                    <button class="btn facebook-provider">Facebook</button>
-                    <button class="btn twitter-provider">Twitter</button>
-                </div>
-            </form>
-        </div>
-        <div class="welcome-screen-container"><img src="../assets/img/paginas/login/login.png" alt=""></div>
-    </div>
-</body>
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Entrar</button>
+                    </form>
 
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo">
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="text" placeholder="Usuario">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- ============================================================================================================================ -->
+        <!-- Footer - Grid y flex-->
+        <!-- ============================================================================================================================ -->
+        <footer>
+            <div class="footer">
+                <div class="infoLogo">
+                    <a href="../index.html">
+                        <img src="../assets/img/header/logo/central-gaming.svg" alt="central gaming" />
+                    </a>
+                    <div class="central-reference">
+                            <p>
+                                <span id="nearMe" class="material-symbols-outlined">near_me</span>
+                                Jiron de la Union N°1054-Lima1.
+                            </p>
+                            <p>
+                                <span id="phone" class="material-symbols-outlined">phone_iphone</span>
+                                01 544-2290 / 983104570
+                            </p>
+                            <p>
+                                <span id="mail" class="material-symbols-outlined">mail</span>
+                                atencionalcliente@centralgaming.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="centralGaming">
+                        <h3>CENTRAL GAMING</h3>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Únete a nuestro equipo</a></li>
+                            <li><a href="#">Nuestras tiendas</a></li>
+                            <li><a href="#">Como comprar</a></li>
+                            <li><a href="#">Cambios y Devoluciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="ayuda">
+                        <h3>AYUDA AL CLIENTE</h3>
+                        <ul>
+                            <li><a href="#">Preguntas Frecuentes</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Políticas de Privacidad</a></li>
+                            <li><a href="#">Políticas de Garantía</a></li>
+                            <li><a href="#">Políticas de envio</a></li>
+                        </ul>
+                    </div>
+                    <div class="redesSociales">
+                        <h3>REDES SOCIALES</h3>
+                        <ul class="redes-footer">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><img class="logosRedes"
+                                        src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/facebook.svg"
+                                        alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><img class="logosRedes"
+                                        src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/square-twitter.svg"
+                                        alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank"><img class="logosRedes"
+                                        src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/youtube.svg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><img class="logosRedes"
+                                        src="../assets/img/redes sociales/SVG/Redes-Sociales-SVG/white/instagram.svg "
+                                        alt="" /></a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#">
+                                <p>
+                                    <span class="material-symbols-outlined">receipt_long</span>
+                                    Facturación Electrónica
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p>
+                                    <span class="material-symbols-outlined">book</span> Libro de
+                                    Reclamaciones
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mediosPago">
+                        <h3>MEDIOS DE PAGO</h3>
+                        <div>
+                            <img src="../assets/img/footer/medios-pago/ul.medios-pagos.svg" width="200px" alt="" />
+                        </div>
+                        <p>Esta tienda está autorizada por Visa</p>
+                        <p>para realizar transacciones electrónicas</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        ©2023 Copyright centralgaming.com.pe - Todos los derechos reservados.
+                    </p>
+                </div>
+            </footer>
+        <script src="../js/index.js"></script>
+        <!-- ========================================================== -->
+        <!-- script js / Bootstrap  -->
+        <!-- ========================================================== -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+                integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+                integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+                crossorigin="anonymous"></script>        
+    </body>
 </html>
