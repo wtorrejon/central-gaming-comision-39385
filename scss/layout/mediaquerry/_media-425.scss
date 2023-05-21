@@ -1,0 +1,32 @@
+/* ============================================================================== */
+@media screen and (max-width: 425px) {
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+	.logo-full {
+		display: none;
+	}
+	.sheld-logo {
+		display: block;
+	}
+	.productos {
+		display: grid;
+		grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+		grid-template-columns: 1fr;
+		gap: 10px;
+		font-family: $font-family_4;
+	}
+	.footer {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+		gap: 20px;
+		text-align: center;
+	}
+	.redes-footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,52 @@
+/* ============================================================================== */
+@media screen and (max-width: 768px) {
+	.search-bar {
+		display: none;
+	}
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+	body {
+		position: relative;
+	}
+	.menu-inferior-mobil {
+		display: flex;
+		flex-direction: row;
+		flex-flow: row;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		position: sticky;
+		bottom: 0;
+		z-index: 1;
+	}
+	.material-icons {
+		font-size: 30px;
+	}
+	.logo-full {
+		display: none;
+	}
+	.redes-full {
+		display: none;
+	}
+	.navbar-desktop {
+		display: none;
+	}
+	.navbar-burger {
+		display: block;
+	}
+	.sheld-logo {
+		display: block;
+	}
+	.productos {
+		margin: 0 !important;
+		padding: 0 !important;
+		display: grid;
+		grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		font-family: $font-family_4;
+	}
+}

@@ -1,0 +1,67 @@
+/* ============================================================================== */
+/* Bootstrap -Modificacion de estilos*/
+/* ============================================================================== */
+.sheld-logo {
+	display: none;
+}
+.navbar-burger {
+	display: none;
+	margin-top: 10px;
+	margin-right: 16px;
+	.btn {
+		color: $color_1 !important;
+		width: 50px !important;
+		&:hover {
+			color: $color_2 !important;
+		}
+	}
+}
+.menu-inferior-mobil {
+	display: none;
+}
+.offcanvas-header {
+	.btn-close {
+		color: $color_1 !important;
+	}
+	background-color: $background-color_2;
+	text-align: center !important;
+}
+.offcanvas-body {
+	background-color: $background-color_1;
+	>ul {
+		list-style: none;
+	}
+	>li {
+		text-decoration: none;
+	}
+	>a {
+		color: $color_3;
+	}
+	.links-burger {
+		li {
+			padding-top: 10px;
+		}
+		.links-redes-burger {
+			>h4 {
+				height: 10px;
+				margin-top: 16px;
+				color: $color_4;
+			}
+			>ul {
+				display: flex;
+				flex-direction: row;
+				gap: 5px;
+				padding-left: 0;
+				width: 20px;
+			}
+			>li {
+				height: 20px !important;
+				font-size: 12px;
+			}
+		}
+	}
+}
+.btn-close {
+	color: $color_1 !important;
+	fill: white !important;
+}

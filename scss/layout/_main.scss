@@ -1,0 +1,106 @@
+/* ============================================================================== */
+/* Seccion novedades y Ofertas - disposicion Flexbox*/
+/* ============================================================================== */
+.container-novedades {
+	@include flex;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	>h1 {
+		font-size: 24px;
+	}
+}
+.container-ofertas {
+	@include flex;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.tituloSeccion {
+	margin: 16px;
+	left: 0;
+}
+ul {
+	li {
+		list-style: none;
+	}
+}
+li {
+	a {
+		text-decoration: none;
+	}
+}
+.productos {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+	font-family: $font-family_4;
+	>li {
+		>div {
+			border: 1px solid #dddd;
+			border-radius: 5px;
+			position: relative;
+			background: #F7F9FD;
+			width: 263px;
+			&:hover {
+				border-color: $border-color_1;
+			}
+			img {
+				background: #ffffff;
+				border-radius: 5px;
+				margin: auto;
+			}
+		}
+	}
+}
+.content {
+	padding: 5px;
+}
+.tituloArticulo {
+	color: $color_7;
+}
+h4 {
+	font-size: 18px;
+}
+.precio {
+	color: $color_8;
+	font-size: 14px;
+	min-height: 40px;
+}
+.stock {
+	font-size: 14px;
+	color: $color_7;
+	height: 28px;
+}
+.codigo {
+	font-size: 14px;
+	color: $color_7;
+	height: 28px;
+}
+.promoNuevo {
+	background-color: $background-color_4;
+	font-size: 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 12px;
+	color: $color_1;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.promoOferta {
+	background-color: $background-color_5;
+	font-size: 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 12px;
+	color: $color_1;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}

@@ -1,0 +1,15 @@
+/* ============================================================================== */
+/* Media Queries - Resoluciones donde se rompe el codigo*/
+/* Se usaron las resoluciones: 1135px xq se rompe el codigo a partir de ahi)*/
+/*resolucion: 768px, 425px (a partir de esta resolucion el codigo funciona 
+en moviles de menores resoluciones,porque se adapta*/
+/* ============================================================================== */
+@media screen and (max-width: 1135px) {
+	.productos {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+		font-family: $font-family_4;
+	}
+}

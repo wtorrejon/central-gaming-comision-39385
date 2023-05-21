@@ -12,7 +12,7 @@ body {
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
+  font-size: 24px; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -20,12 +20,19 @@ body {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
   font-feature-settings: "liga";
 }
 
+/* ============================================================================== */
+/* Bootstrap -Modificacion de estilos*/
+/* ============================================================================== */
 .sheld-logo {
   display: none;
 }
@@ -67,28 +74,34 @@ body {
 .offcanvas-body > a {
   color: black;
 }
-
-.links-burger li {
+.offcanvas-body .links-burger li {
   padding-top: 10px;
 }
-
-.links-redes-burger > h4 {
+.offcanvas-body .links-burger .links-redes-burger > h4 {
   height: 10px;
   margin-top: 16px;
   color: #6c9be2;
 }
-.links-redes-burger > ul {
+.offcanvas-body .links-burger .links-redes-burger > ul {
   display: flex;
   flex-direction: row;
   gap: 5px;
   padding-left: 0;
   width: 20px;
 }
-.links-redes-burger > li {
+.offcanvas-body .links-burger .links-redes-burger > li {
   height: 20px !important;
   font-size: 12px;
 }
 
+.btn-close {
+  color: white !important;
+  fill: white !important;
+}
+
+/* ============================================================================== */
+/* Header left- Estilo general y Logo
+/* ============================================================================== */
 header {
   background-color: #04113D;
   color: white;
@@ -98,25 +111,26 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
-.headerLeft {
+header .headerLeft {
   display: flex;
   align-items: center;
   padding: 10px 10px;
 }
-
-.logo {
+header .logo {
   font-family: "Lobster", cursive;
   align-items: normal;
   text-decoration: none;
   margin: 5px 0;
 }
-.logo img {
+header .logo img {
   height: 50px;
   padding: 0;
   margin-left: 16px;
 }
 
+/* ============================================================================== */
+/* Header left- SearchBar*/
+/* ============================================================================== */
 .search-bar {
   background-color: white;
   border: solid 1px #ccc;
@@ -156,6 +170,9 @@ header {
   color: #2979e2;
 }
 
+/* ============================================================================== */
+/* Header rigth- Redes Sociales*/
+/* ============================================================================== */
 .redes {
   display: flex;
   flex-direction: row;
@@ -177,6 +194,9 @@ header {
   margin: 20px 5px;
 }
 
+/* ============================================================================== */
+/* Navbar - links*/
+/* ============================================================================== */
 .navbar-desktop {
   display: flex;
   position: relative;
@@ -204,6 +224,9 @@ header {
   margin: 0;
 }
 
+/* ============================================================================== */
+/* Navbar - derecho >> Login - favoritos - compras*/
+/* ============================================================================== */
 .botLeft {
   position: absolute;
   right: 0;
@@ -218,6 +241,9 @@ header {
   padding: 0;
 }
 
+/* ============================================================================== */
+/* Seccion novedades y Ofertas - disposicion Flexbox*/
+/* ============================================================================== */
 .container-novedades {
   display: flex;
   flex-direction: column;
@@ -244,15 +270,6 @@ header {
 .tituloSeccion {
   margin: 16px;
   left: 0;
-}
-
-.container {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center !important;
-  text-align: center;
 }
 
 ul li {
@@ -344,6 +361,27 @@ h4 {
   right: 5px;
 }
 
+/* ============================================================================== */
+/* Seccion Marcas*/
+/* ============================================================================== */
+.container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+  text-align: center;
+}
+.container ul li {
+  list-style: none;
+}
+.container ul li a {
+  text-decoration: none;
+}
+
+/* ============================================================================== */
+/* Main Login */
+/* ============================================================================== */
 .body-login {
   background-image: url(../assets/img/background/gradient.avif);
   background-size: cover;
@@ -474,6 +512,9 @@ h4 {
   text-align: justify;
 }
 
+/* ============================================================================== */
+/* Footer*/
+/* ============================================================================== */
 footer {
   font-family: "Open Sans", Arial, sans-serif;
   background: #04113D;
@@ -548,11 +589,12 @@ footer h3 {
   padding: 0;
 }
 
-.btn-close {
-  color: white !important;
-  fill: white !important;
-}
-
+/* ============================================================================== */
+/* Media Queries - Resoluciones donde se rompe el codigo*/
+/* Se usaron las resoluciones: 1135px xq se rompe el codigo a partir de ahi)*/
+/*resolucion: 768px, 425px (a partir de esta resolucion el codigo funciona 
+en moviles de menores resoluciones,porque se adapta*/
+/* ============================================================================== */
 @media screen and (max-width: 1135px) {
   .productos {
     display: grid;
@@ -562,6 +604,7 @@ footer h3 {
     font-family: "Open Sans", Arial, sans-serif;
   }
 }
+/* ============================================================================== */
 @media screen and (max-width: 850px) {
   .caja__trasera {
     max-width: 350px;
@@ -582,6 +625,7 @@ footer h3 {
     position: relative;
   }
 }
+/* ============================================================================== */
 @media screen and (max-width: 768px) {
   .search-bar {
     display: none;
@@ -633,6 +677,7 @@ footer h3 {
     font-family: "Open Sans", Arial, sans-serif;
   }
 }
+/* ============================================================================== */
 @media screen and (max-width: 563px) {
   header {
     position: sticky;
@@ -664,6 +709,7 @@ footer h3 {
     justify-content: center;
   }
 }
+/* ============================================================================== */
 @media screen and (max-width: 425px) {
   header {
     position: sticky;
@@ -695,6 +741,7 @@ footer h3 {
     justify-content: center;
   }
 }
+/* ============================================================================== */
 @media screen and (max-width: 375px) {
   .headerLeft .search-bar {
     display: none;

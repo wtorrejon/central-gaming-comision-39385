@@ -1,0 +1,139 @@
+/* ============================================================================== */
+/* Header left- Estilo general y Logo
+/* ============================================================================== */
+header {
+	background-color: $background-color_2;
+	color: $color_1;
+	height: 65px;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	.headerLeft {
+		display: flex;
+		align-items: center;
+		padding: 10px 10px;
+	}
+	.logo {
+		font-family: $font-family_3;
+		align-items: normal;
+		text-decoration: none;
+		margin: 5px 0;
+		img {
+			height: 50px;
+			padding: 0;
+			margin-left: 16px;
+		}
+	}
+}
+/* ============================================================================== */
+/* Header left- SearchBar*/
+/* ============================================================================== */
+.search-bar {
+	background-color: $background-color_3;
+	border: solid 1px #ccc;
+	border-radius: 20px;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 16px;
+	margin-left: 20px;
+	transition: 0.3s ease-in-out;
+	&:focus-within {
+		border: 1px #6c9be2;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	}
+	input[type="text"] {
+		border: none;
+		outline: none;
+		padding: auto;
+		flex: 1;
+		font-size: 16px;
+	}
+	.actions {
+		display: flex;
+		gap: 5px;
+		button {
+			border: none;
+			outline: none;
+			background: none;
+			cursor: pointer;
+			color: $color_5;
+			transition: color 0.3s ease-in-out;
+			&:hover {
+				color: $color_6;
+			}
+		}
+	}
+}
+/* ============================================================================== */
+/* Header rigth- Redes Sociales*/
+/* ============================================================================== */
+.redes {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-right: 16px;
+}
+.redes-full {
+	ul {
+		li {
+			list-style: none;
+		}
+	}
+	img {
+		&:hover {
+			border: 1px yellow;
+		}
+	}
+}
+.logosRedes {
+	text-decoration: none;
+	height: 25px;
+	margin: 20px 5px;
+}
+/* ============================================================================== */
+/* Navbar - links*/
+/* ============================================================================== */
+.navbar-desktop {
+	display: flex;
+	position: relative;
+	background: #04113D;
+	justify-content: center;
+	align-items: center;
+	li {
+		display: inline-block;
+		font-size: 15px;
+	}
+	a {
+		text-decoration: none;
+		color: $color_1;
+		display: block;
+		padding: 10px 20px;
+		&:hover {
+			background: #6c9be2;
+			color: $color_3;
+		}
+	}
+}
+.links {
+	list-style: none;
+	margin: 0;
+}
+
+/* ============================================================================== */
+/* Navbar - derecho >> Login - favoritos - compras*/
+/* ============================================================================== */
+.botLeft {
+	position: absolute;
+	right: 0;
+}
+#usEdit {
+	padding: 0;
+	margin: 0 5px;
+}
+.usuario {
+	padding: 0;
+}

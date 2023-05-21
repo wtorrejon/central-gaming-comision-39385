@@ -1,0 +1,19 @@
+/* ============================================================================== */
+/* Seccion Marcas*/
+/* ============================================================================== */
+.container {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center !important;
+	text-align: center;
+    ul {
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

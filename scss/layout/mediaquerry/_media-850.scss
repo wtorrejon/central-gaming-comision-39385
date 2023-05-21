@@ -1,0 +1,21 @@
+/* ============================================================================== */
+@media screen and (max-width: 850px) {
+	.caja__trasera {
+		max-width: 350px;
+		height: 300px;
+		flex-direction: column;
+		margin: auto;
+		div {
+			margin: 0px;
+			position: absolute;
+		}
+	}
+	.contenedor__login-register {
+		top: -10px;
+		left: -5px;
+		margin: auto;
+		form {
+			position: relative;
+		}
+	}
+}

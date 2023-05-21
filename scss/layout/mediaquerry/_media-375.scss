@@ -1,0 +1,56 @@
+/* ============================================================================== */
+@media screen and (max-width: 375px) {
+	.headerLeft {
+		.search-bar {
+			display: none;
+		}
+	}
+	.offcanvas-body {
+		>.search-bar {
+			display: block;
+			height: 40px;
+		}
+		.search-bar {
+			&:focus-within {
+				border: 1px #6c9be2;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			}
+			input[type="text"] {
+				border: none;
+				outline: none;
+				padding: auto;
+				flex: 1;
+				font-size: 16px;
+			}
+			.actions {
+				position: absolute;
+				right: 10px;
+				top: 5px;
+				button {
+					border: none;
+					outline: none;
+					background: none;
+					cursor: pointer;
+					color: $color_5;
+					transition: color 0.3s ease-in-out;
+					&:hover {
+						color: $color_6;
+					}
+				}
+			}
+		}
+	}
+	.search-bar {
+		background-color: $background-color_3;
+		border: solid 1px #ccc;
+		border-radius: 20px;
+		width: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0px 16px;
+		margin-left: 20px;
+		transition: 0.3s ease-in-out;
+		position: relative;
+	}
+}
