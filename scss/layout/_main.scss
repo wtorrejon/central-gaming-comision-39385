@@ -51,33 +51,38 @@ li {
 				border-radius: 5px;
 				margin: auto;
 			}
+			
 		}
 	}
 }
 .content {
-	padding: 5px;
+	padding: 10px;
+	.tituloArticulo {
+		color: $color_7;
+		height: 80px;
+		h4 {
+		font-size: 18px;
+		}
+	}
+	.precio {
+		color: $color_8;
+		font-size: 14px;
+		min-height: 40px;
+	}
+	.stock {
+		font-size: 14px;
+		color: $color_7;
+		height: 28px;
+	}
+	.codigo {
+		font-size: 14px;
+		color: $color_7;
+		height: 28px;
+	}
 }
-.tituloArticulo {
-	color: $color_7;
-}
-h4 {
-	font-size: 18px;
-}
-.precio {
-	color: $color_8;
-	font-size: 14px;
-	min-height: 40px;
-}
-.stock {
-	font-size: 14px;
-	color: $color_7;
-	height: 28px;
-}
-.codigo {
-	font-size: 14px;
-	color: $color_7;
-	height: 28px;
-}
+
+
+
 .promoNuevo {
 	background-color: $background-color_4;
 	font-size: 15px;

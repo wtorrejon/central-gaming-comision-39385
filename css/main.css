@@ -304,30 +304,26 @@ li a {
 }
 
 .content {
-  padding: 5px;
+  padding: 10px;
 }
-
-.tituloArticulo {
+.content .tituloArticulo {
   color: #404751;
+  height: 80px;
 }
-
-h4 {
+.content .tituloArticulo h4 {
   font-size: 18px;
 }
-
-.precio {
+.content .precio {
   color: #3C8EEE;
   font-size: 14px;
   min-height: 40px;
 }
-
-.stock {
+.content .stock {
   font-size: 14px;
   color: #404751;
   height: 28px;
 }
-
-.codigo {
+.content .codigo {
   font-size: 14px;
   color: #404751;
   height: 28px;
